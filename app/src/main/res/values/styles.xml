@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryDark">@color/color_dark_gray</item>
+        <item name="colorAccent">@color/color_dark_gray</item>
+    </style>
+
+    <style name="ButtonDarkGray" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:background">@color/color_dark_gray</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="textFeildStyle">
+        <item name="android:layout_width">@dimen/dimen_0</item>
+        <item name="android:layout_height">@dimen/heigh_edit_text</item>
+        <item name="android:layout_marginTop">@dimen/dimen_20</item>
+        <item name="android:layout_marginStart">@dimen/dimen_20</item>
+        <item name="android:layout_marginEnd">@dimen/dimen_20</item>
+        <item name="android:ems">10</item>
+        <item name="android:lines">1</item>
+    </style>
+</resources>

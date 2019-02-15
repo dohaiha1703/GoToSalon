@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_20">
+
+            <ImageView
+                android:id="@+id/image_salon"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_height="@dimen/dimen_200"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/background_sign_up" />
+
+            <TextView
+                android:id="@+id/text_salon_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:text="@string/hint_email"
+                android:textColor="@color/color_dark_blue"
+                android:textSize="@dimen/text_16"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_navigate_phone" />
+
+            <TextView
+                android:id="@+id/text_navigate_email"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_30"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:text="@string/tittle_write_email"
+                android:textAllCaps="false"
+                android:textColor="@color/design_default_color_primary"
+                android:textSize="@dimen/text_12"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_salon_email" />
+
+            <TextView
+                android:id="@+id/text_salon_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:text="@string/hint_phone"
+                android:textColor="@color/color_dark_blue"
+                android:textSize="@dimen/text_16"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_title_open" />
+
+            <TextView
+                android:id="@+id/text_navigate_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_30"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:text="@string/tittle_dial_phone"
+                android:textAllCaps="false"
+                android:textColor="@color/design_default_color_primary"
+                android:textSize="@dimen/text_12"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_salon_phone" />
+
+            <TextView
+                android:id="@+id/text_title_close"
+                android:layout_width="@dimen/dimen_50"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_50"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:text="@string/tittle_close"
+                android:textColor="@color/color_dark_blue"
+                app:layout_constraintStart_toEndOf="@+id/text_salon_open"
+                app:layout_constraintTop_toBottomOf="@+id/text_navigate_address" />
+
+            <TextView
+                android:id="@+id/text_salon_close"
+                android:layout_width="@dimen/dimen_100"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:textColor="@android:color/holo_red_dark"
+                app:layout_constraintStart_toEndOf="@+id/text_title_close"
+                app:layout_constraintTop_toBottomOf="@+id/text_navigate_address" />
+
+            <TextView
+                android:id="@+id/text_salon_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:text="@string/hint_salon_name"
+                android:textColor="@color/color_dark_blue"
+                android:textSize="@dimen/text_22"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image_salon" />
+
+            <TextView
+                android:id="@+id/text_salon_views"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:text="@string/title_view_number"
+                android:textColor="@color/color_dark_blue"
+                android:textSize="@dimen/text_14"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_salon_name" />
+
+            <TextView
+                android:id="@+id/text_salon_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:text="@string/hint_address"
+                android:textColor="@color/color_dark_blue"
+                android:textSize="@dimen/text_16"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_salon_views" />
+
+            <TextView
+                android:id="@+id/text_navigate_address"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_30"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:text="@string/title_get_location"
+                android:textAllCaps="false"
+                android:textColor="@color/design_default_color_primary"
+                android:textSize="@dimen/text_12"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_salon_address" />
+
+            <TextView
+                android:id="@+id/text_title_open"
+                android:layout_width="@dimen/dimen_50"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:text="@string/title_open"
+                android:textColor="@color/color_dark_blue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_navigate_address" />
+
+            <TextView
+                android:id="@+id/text_salon_open"
+                android:layout_width="@dimen/dimen_100"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:textColor="@android:color/holo_green_dark"
+                app:layout_constraintStart_toEndOf="@+id/text_title_open"
+                app:layout_constraintTop_toBottomOf="@+id/text_navigate_address" />
+
+            <TextView
+                android:id="@+id/text_title_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:nestedScrollingEnabled="false"
+                android:text="@string/hint_description"
+                android:textColor="@color/color_dark_blue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_navigate_email" />
+
+            <TextView
+                android:id="@+id/text_salon_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:nestedScrollingEnabled="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_title_description" />
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</FrameLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image_choose"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="@dimen/dimen_200"
+            android:layout_margin="@dimen/dimen_30"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/image_choose" />
+
+        <EditText
+            android:id="@+id/edit_salon_name"
+            style="@style/textFeildStyle"
+            android:hint="@string/hint_salon_name"
+            android:inputType="textPersonName"
+            android:maxLength="200"
+            android:maxLines="2"
+            android:singleLine="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_choose" />
+
+        <EditText
+            android:id="@+id/edit_salon_address"
+            style="@style/textFeildStyle"
+            android:hint="@string/hint_address"
+            android:inputType="textPersonName"
+            android:maxLength="300"
+            android:maxLines="2"
+            android:singleLine="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_salon_name" />
+
+        <TextView
+            android:id="@+id/text_open"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/heigh_edit_text"
+            android:layout_marginStart="@dimen/dimen_20"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:gravity="center|start"
+            android:text="@string/title_open"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_salon_address" />
+
+        <Spinner
+            android:id="@+id/spinner_open"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/heigh_edit_text"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:gravity="center|start"
+            app:layout_constraintStart_toEndOf="@+id/text_open"
+            app:layout_constraintTop_toBottomOf="@+id/edit_salon_address" />
+
+        <TextView
+            android:id="@+id/text_close"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/heigh_edit_text"
+            android:layout_marginStart="@dimen/dimen_10"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:gravity="center|start"
+            android:text="@string/tittle_close"
+            app:layout_constraintStart_toEndOf="@+id/spinner_open"
+            app:layout_constraintTop_toBottomOf="@+id/edit_salon_address" />
+
+        <Spinner
+            android:id="@+id/spinner_close"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/heigh_edit_text"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:layout_marginEnd="@dimen/dimen_20"
+            android:gravity="center|start"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/text_close"
+            app:layout_constraintTop_toBottomOf="@+id/edit_salon_address" />
+
+        <EditText
+            android:id="@+id/edit_salon_phone"
+            style="@style/textFeildStyle"
+            android:hint="@string/hint_phone"
+            android:inputType="phone"
+            android:maxLength="13"
+            android:maxLines="1"
+            android:singleLine="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_close" />
+
+        <EditText
+            android:id="@+id/edit_salon_email"
+            style="@style/textFeildStyle"
+            android:hint="@string/hint_email"
+            android:inputType="textEmailAddress"
+            android:maxLength="100"
+            android:maxLines="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_salon_phone" />
+
+        <EditText
+            android:id="@+id/edit_salon_description"
+            style="@style/textFeildStyle"
+            android:fallbackLineSpacing="false"
+            android:hint="@string/hint_description"
+            android:inputType="textMultiLine"
+            android:maxLines="5"
+            android:nestedScrollingEnabled="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_salon_email" />
+
+        <Button
+            android:id="@+id/button_update"
+            style="@style/ButtonDarkGray"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_55"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:layout_marginEnd="@dimen/dimen_55"
+            android:layout_marginBottom="@dimen/dimen_30"
+            android:text="@string/button_update"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_salon_description" />
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="?attr/actionBarSize"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/image_update"
+            android:layout_width="@dimen/dimen_40"
+            android:layout_height="@dimen/dimen_40"
+            android:alpha="0.7"
+            android:background="@color/color_gray"
+            app:layout_constraintBottom_toBottomOf="@+id/image_choose"
+            app:layout_constraintEnd_toEndOf="@+id/image_choose"
+            app:srcCompat="@drawable/ic_edit_dark_blue_24dp" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

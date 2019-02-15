@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/image_back"
+        style="?attr/borderlessButtonStyle"
+        android:layout_width="@dimen/dimen_55"
+        android:layout_height="@dimen/dimen_55"
+        android:layout_marginStart="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
+
+    <ImageView
+        android:id="@+id/image_logo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_120"
+        android:layout_marginTop="@dimen/dimen_40"
+        android:layout_marginEnd="@dimen/dimen_120"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/edit_email"
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="@dimen/heigh_edit_text"
+        android:layout_marginStart="@dimen/dimen_20"
+        android:layout_marginTop="@dimen/dimen_45"
+        android:layout_marginEnd="@dimen/dimen_20"
+        android:ems="10"
+        android:hint="@string/hint_email"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_logo" />
+
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="@dimen/heigh_edit_text"
+        android:layout_marginStart="@dimen/dimen_20"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:layout_marginEnd="@dimen/dimen_20"
+        android:ems="10"
+        android:hint="@string/hint_password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_email" />
+
+    <Button
+        android:id="@+id/button_sign_in"
+        style="@style/ButtonDarkGray"
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_55"
+        android:layout_marginTop="@dimen/dimen_40"
+        android:layout_marginEnd="@dimen/dimen_55"
+        android:accessibilityHeading="true"
+        android:text="@string/button_sign_in"
+        android:textAllCaps="false"
+        android:textSize="@dimen/text_22"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/check_box_remember" />
+
+    <CheckBox
+        android:id="@+id/check_box_remember"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/heigh_edit_text"
+        android:layout_marginStart="@dimen/dimen_20"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:text="@string/check_box_remember"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_password" />
+
+    <TextView
+        android:id="@+id/text_sign_up"
+        style="?attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:layout_marginEnd="8dp"
+        android:text="@string/button_dont_have"
+        android:textAllCaps="false"
+        android:textColor="@color/color_dark_blue"
+        android:textSize="@dimen/text_14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_sign_in"
+        tools:textSize="@dimen/text_16" />
+
+</android.support.constraint.ConstraintLayout>
